@@ -37,8 +37,10 @@ namespace Control_de_pagos__lab7_
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            CenterToScreen();
             datosPropiedades.cargarLista();
             datosPropietarios.cargarLista();
+            //datosControl.cargarLista();
         }
     }
 }

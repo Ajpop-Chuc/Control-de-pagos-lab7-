@@ -22,6 +22,7 @@ namespace Control_de_pagos__lab7_
         public static List<datosControl> listaControl = new List<datosControl>();
         public static void cargarLista()
         {
+            listaControl.Clear();
             foreach(var propiedad in datosPropiedades.listaPropiedades)
             {
                 datosControl control = new datosControl();

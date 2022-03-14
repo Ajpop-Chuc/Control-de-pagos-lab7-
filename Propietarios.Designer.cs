@@ -130,6 +130,7 @@
             this.Controls.Add(this.textBoxDpi);
             this.Name = "Propietarios";
             this.Text = "Propietarios";
+            this.Load += new System.EventHandler(this.Propietarios_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

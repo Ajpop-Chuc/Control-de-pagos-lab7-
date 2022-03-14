@@ -25,6 +25,14 @@ namespace Control_de_pagos__lab7_
             propiedad.CuotaMantenimietno = Convert.ToDouble(textBoxCuota.Text);
             datosPropiedades.listaPropiedades.Add(propiedad);
             datosPropiedades.guardarenTxt();
+            textBoxnoCasa.Clear();
+            textBoxDpi.Clear();
+            textBoxCuota.Clear();
+        }
+
+        private void Propiedades_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
         }
     }
 }

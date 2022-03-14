@@ -129,6 +129,7 @@
             this.Controls.Add(this.textBoxnoCasa);
             this.Name = "Propiedades";
             this.Text = "Propiedades";
+            this.Load += new System.EventHandler(this.Propiedades_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

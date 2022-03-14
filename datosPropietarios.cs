@@ -22,12 +22,11 @@ namespace Control_de_pagos__lab7_
         {
             FileStream abrir = new FileStream("Propietarios.txt", FileMode.OpenOrCreate, FileAccess.Write);
             StreamWriter escribir = new StreamWriter(abrir);
-            foreach (var propietario in listaPropietarios)
+            foreach (var propietario in datosPropietarios.listaPropietarios)
             {
                 escribir.WriteLine(propietario.dpi);
                 escribir.WriteLine(propietario.nombre);
                 escribir.WriteLine(propietario.apellido);
-                datosPropietarios.listaPropietarios.Add(propietario);
             }
             escribir.Close();
             abrir.Close();

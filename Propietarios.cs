@@ -30,6 +30,14 @@ namespace Control_de_pagos__lab7_
             propietario.Apellido = textBoxApellido.Text;
             datosPropietarios.listaPropietarios.Add(propietario);
             datosPropietarios.guardarenTxt();
+            textBoxDpi.Clear();
+            textBoxNombre.Clear();
+            textBoxApellido.Clear();
+        }
+
+        private void Propietarios_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
         }
     }
 }

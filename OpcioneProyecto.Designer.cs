@@ -35,6 +35,7 @@
             this.cuotasDeMantenimientoMasAltasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cuotasDeMantenimientoMasBajasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cuotasMasAltaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenarPorMedioDeCutoasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -76,7 +77,8 @@
             this.opcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cuotasDeMantenimientoMasAltasToolStripMenuItem,
             this.cuotasDeMantenimientoMasBajasToolStripMenuItem,
-            this.cuotasMasAltaToolStripMenuItem});
+            this.cuotasMasAltaToolStripMenuItem,
+            this.ordenarPorMedioDeCutoasToolStripMenuItem});
             this.opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
             this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(85, 24);
             this.opcionesToolStripMenuItem.Text = "Opciones";
@@ -93,12 +95,21 @@
             this.cuotasDeMantenimientoMasBajasToolStripMenuItem.Name = "cuotasDeMantenimientoMasBajasToolStripMenuItem";
             this.cuotasDeMantenimientoMasBajasToolStripMenuItem.Size = new System.Drawing.Size(333, 26);
             this.cuotasDeMantenimientoMasBajasToolStripMenuItem.Text = "Cuotas de mantenimiento mas bajas";
+            this.cuotasDeMantenimientoMasBajasToolStripMenuItem.Click += new System.EventHandler(this.cuotasDeMantenimientoMasBajasToolStripMenuItem_Click);
             // 
             // cuotasMasAltaToolStripMenuItem
             // 
             this.cuotasMasAltaToolStripMenuItem.Name = "cuotasMasAltaToolStripMenuItem";
             this.cuotasMasAltaToolStripMenuItem.Size = new System.Drawing.Size(333, 26);
             this.cuotasMasAltaToolStripMenuItem.Text = "Cuotas mas alta";
+            this.cuotasMasAltaToolStripMenuItem.Click += new System.EventHandler(this.cuotasMasAltaToolStripMenuItem_Click);
+            // 
+            // ordenarPorMedioDeCutoasToolStripMenuItem
+            // 
+            this.ordenarPorMedioDeCutoasToolStripMenuItem.Name = "ordenarPorMedioDeCutoasToolStripMenuItem";
+            this.ordenarPorMedioDeCutoasToolStripMenuItem.Size = new System.Drawing.Size(333, 26);
+            this.ordenarPorMedioDeCutoasToolStripMenuItem.Text = "Ordenar por medio de cutoas";
+            this.ordenarPorMedioDeCutoasToolStripMenuItem.Click += new System.EventHandler(this.ordenarPorMedioDeCutoasToolStripMenuItem_Click);
             // 
             // OpcioneProyecto
             // 
@@ -129,5 +140,6 @@
         private System.Windows.Forms.ToolStripMenuItem cuotasDeMantenimientoMasAltasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cuotasDeMantenimientoMasBajasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cuotasMasAltaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ordenarPorMedioDeCutoasToolStripMenuItem;
     }
 }
